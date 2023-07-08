@@ -993,8 +993,8 @@ textarea {
         }
     .list-customers {
         display: flex;
-        flex-direction: column;
-        column-gap: 72px;
+        flex-wrap: wrap;
+
     }
     .container-footer {
         display: flex;
