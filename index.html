@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-home-work-05</title>
+    <title>goit-home-work-06</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -57,6 +57,85 @@
             </li>
           </ul>
         </address>
+        <div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <div class="mobile-name">
+            <ul class="mobile-menu">
+              <li>
+                <a class="mobile-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="./portfolio.html" target="_self"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-adress">
+            <ul class="mobile-menu">
+              <li>
+                <a class="mobile-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-inter">
+            <ul>
+              <li class="networks-li">
+                <a class="list-net" href="" aria-label="instagram">
+                  <svg class="networks" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-li">
+                <a class="list-net" href="" aria-label="twitter">
+                  <svg class="networks" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-li">
+                <a class="list-net" href="" aria-label="facebook">
+                  <svg class="networks" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-li">
+                <a class="list-net" href="" aria-label="instagram">
+                  <svg class="networks" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="menu-toggle js-close-menu">
+            <svg class="icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!--Main-->
@@ -75,7 +154,7 @@
         <div class="container">
           <h2 class="visually-hidden">.</h2>
           <ul class="features-container">
-            <li>
+            <li class="adaptive-list">
               <div class="features-icons">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -87,7 +166,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="adaptive-list">
               <div class="features-icons">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -99,7 +178,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="adaptive-list">
               <div class="features-icons">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -111,7 +190,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="adaptive-list">
               <div class="features-icons">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -161,10 +240,14 @@
       <!--Section Team-->
       <section class="section-team">
         <div class="container container-workers">
-          <h2 class="main-title">Our Team</h2>
+          <h2 class="main-title-team">Our Team</h2>
           <ul class="list-workers">
             <li class="staff">
               <img
+                srcset="
+                  ./images/mobile/img_1.jpg 1x,
+                  ./images/tablet/img_1.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
@@ -207,6 +290,10 @@
             </li>
             <li class="staff">
               <img
+                srcset="
+                  ./images/mobile/img_2.jpg 1x,
+                  ./images/tablet/img_2.jpg 2x
+                "
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford Frontend Developer"
                 width="264"
@@ -249,6 +336,10 @@
             </li>
             <li class="staff">
               <img
+                srcset="
+                  ./images/mobile/img_3.jpg 1x,
+                  ./images/tablet/img_3.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia Marketing"
                 width="264"
@@ -291,6 +382,10 @@
             </li>
             <li class="staff">
               <img
+                srcset="
+                  ./images/mobile/img_4.jpg 1x,
+                  ./images/tablet/img_4.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson UI Designer"
                 width="264"
@@ -337,7 +432,7 @@
       <!--Section Customers-->
       <section class="customers">
         <div class="container customers-container">
-          <h2 class="main-title">Customers</h2>
+          <h2 class="main-title-team">Customers</h2>
           <ul class="list-customers">
             <li class="customers-item">
               <a class="customers-link" href="" aria-label="Logo">
@@ -543,6 +638,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
