@@ -1053,6 +1053,7 @@ textarea {
     flex-direction: column;
     gap: 72px;
     align-items: center;
+    flex-basis: calc((100% - 16px) / 2);
 }
 
 .staff {
@@ -1285,6 +1286,7 @@ textarea {
     flex-direction: column;
     gap: 72px;
     align-items: center;
+    flex-basis: calc((100% - 16px) / 2);
 }
 .staff {
     margin: auto 82px;
@@ -1402,17 +1404,15 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 64px;
-    max-width: 768px;
+    flex-basis: calc((100% - 24px) / 2);
     }
 .list-customers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 72px;
     justify-content: center;
-    max-width: 768px;
-
+    flex-basis: calc((100% - 48px) / 3);
 }
 .container-footer {
     display: flex;
