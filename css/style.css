@@ -912,6 +912,26 @@ textarea {
 }
 /*Adaptive*/
 @media only screen and (max-width: 427px) {
+.mobile-hamburger {
+    padding: 24px 0;
+}
+.header-menu-hamburger {
+    min-height: 32px;
+    min-width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.adopt-hamburger {
+   display: none;   
+}
 .container {
     max-width:100%;
     overflow: hidden;
@@ -926,10 +946,15 @@ textarea {
 .adresslink {
     display: none;
     }
-.header-menu {
+.header-menu-hamburger {
     background-color: transparent;
     border-color: transparent;
 }
+/*HAMBURGER*/
+.mobile-menu {
+    display: none;
+}
+/* FINISH*/
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/mobile/Dark-bg.jpg);
@@ -971,13 +996,12 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
 }
 
 .staff {
     margin: auto 82px;
-}
-.staff-networks-list  {
-    width: 100%;
+    width: 264px;
 }
 .list-customers {
     display: flex;
@@ -1035,9 +1059,15 @@ textarea {
 .adresslink {
     display: none;
 }
-.header-menu {
+.header-menu-hamburger {
     background-color: transparent;
     border-color: transparent;
+}
+.adopt-hamburger {
+    display: none;
+}
+.mobile-menu {
+    display: none;
 }
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -1084,9 +1114,11 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
 }
 .staff {
     margin: auto 82px;
+    width: 264px;
 }
 
 .list-customers {
@@ -1145,7 +1177,13 @@ textarea {
 .backdrop {
     max-width: 100%;
 }
-.header-menu {
+.header-menu-hamburger {
+    display: none;
+}
+.adopt-hamburger {
+    display: none;
+}
+.mobile-menu {
     display: none;
 }
 .adress-list {
@@ -1168,23 +1206,20 @@ textarea {
 }
 .features-section {
     padding: 96px 0px;
-    
-}
-
+  }
 .features-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 72px 24px;
+
 }
 .title-name {
     font-size: 36px;
     font-weight: 700;
 }
 .adaptive-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 356px;
 }
 .text {
     font-size: 16px;
@@ -1197,8 +1232,9 @@ textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto 108px;
-}
+    justify-content: space-around;
+    row-gap: 64px;
+    }
 .list-customers {
     display: flex;
     flex-direction: row;
@@ -1219,5 +1255,16 @@ textarea {
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+}
+@media only screen and (min-width: 1158px) {
+.header-menu-hamburger {
+        display: none;
+    }
+.adopt-hamburger {
+    display: none;
+}
+.mobile-menu {
+    display: none;
 }
 }
