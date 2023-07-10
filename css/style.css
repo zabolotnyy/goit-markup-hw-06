@@ -169,6 +169,7 @@ textarea {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -1236,9 +1237,6 @@ textarea {
 }
 
 /* FINISH*/
-.mobile-menu {
-    display: none;
-}
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/mobile/Dark-bg.jpg);
