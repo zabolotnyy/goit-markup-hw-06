@@ -949,21 +949,23 @@ textarea {
     border-color: transparent;
 }
 /*HAMBURGER*/
-.mobile-menu {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    z-index: 2;
-    height: 100vh;
-    background-color: #FFFFFF;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
-    margin: auto;
-}
-.mobile-menu .close-cross-mobile {
+.mobile-menu  {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     padding: 32px;
+     background-color: #ffff;
+     z-index: 999;
+
+     transform: translateX(100%);
+     transition: transform 250ms ease-in-out;
+ }
+.mobile-menu.is-open {
+     transform: translateX(0);
+ }
+.menu-toggle {
     position: absolute;
     color: #E7E9FC;
     top: 24px;
@@ -993,6 +995,7 @@ textarea {
     flex-direction: column;
     gap: 40px;
     padding-bottom: 142px;
+    padding-top: 32px;
 }
 .mobile-menu-adress{
     display: flex;
