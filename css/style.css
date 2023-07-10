@@ -929,9 +929,6 @@ textarea {
     border-radius: 50%;
     outline: none;
 }
-.adopt-hamburger {
-   display: none;   
-}
 .container {
     max-width:100%;
     overflow: hidden;
@@ -1063,9 +1060,6 @@ textarea {
     background-color: transparent;
     border-color: transparent;
 }
-.adopt-hamburger {
-    display: none;
-}
 .mobile-menu {
     display: none;
 }
@@ -1180,9 +1174,6 @@ textarea {
 .header-menu-hamburger {
     display: none;
 }
-.adopt-hamburger {
-    display: none;
-}
 .mobile-menu {
     display: none;
 }
@@ -1261,9 +1252,6 @@ textarea {
 .header-menu-hamburger {
         display: none;
     }
-.adopt-hamburger {
-    display: none;
-}
 .mobile-menu {
     display: none;
 }
