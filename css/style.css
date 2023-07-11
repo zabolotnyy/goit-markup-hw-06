@@ -89,10 +89,11 @@ textarea {
 /*Reset Finish*/
 /*Container*/
 .container {
-    /*width: 1158px;
+    min-width: 320px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px 0 15px;*/
+    padding: 0 15px 0 15px;
     outline: 1px solid red;
 }
 /*Header*/
@@ -913,9 +914,9 @@ textarea {
     margin: 0 auto;
 }
 /*Adaptive*/
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 428px) {
 .container {
-    min-width: 320px;
+    max-width:427px;
     overflow: hidden;
     }
 .backdrop {
@@ -960,6 +961,8 @@ textarea {
  }
 .mobile-menu.is-open {
      transform: translateX(0);
+     overflow: auto;
+     padding: 24px 35px 40px 40px;
  }
 .menu-toggle {
     position: absolute;
@@ -982,24 +985,20 @@ textarea {
     font-size: 36px;
     font-weight: 700;
 }
-.header-list-mobile .link:hover,
-.header-list-mobile .link:focus {
-    color: var(--focus-color);
-}
+
 .mobile-menu-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-bottom: 142px;
-    padding-top: 32px;
+    margin-bottom: 284px;
+    margin-top: 32px;
 }
 .mobile-menu-adress{
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
-    padding-top: 142px;
-    padding-bottom: 48px;
-}
+    margin-bottom: 48px;
+    }
 .header-adress-mobile {
     font-size: 20px;
     font-weight: 500;
@@ -1016,6 +1015,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 112px 0;
     }
 .herotext {
     max-width: 320px;
@@ -1102,9 +1102,8 @@ textarea {
     max-width: 165px;
 }
 }
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 428px) and (max-width: 768px) {
 .container {
-    min-width: 320px;
     max-width: 428px;
     overflow: hidden;
 }
@@ -1150,6 +1149,7 @@ textarea {
  }
 .mobile-menu.is-open {
      transform: translateX(0);
+     overflow: auto;
  }
 .menu-toggle {
     position: absolute;
@@ -1183,6 +1183,8 @@ textarea {
 }
 .mobile-menu.is-open {
     transform: translateX(0);
+    overflow: auto;
+    padding: 24px 35px 40px 40px;
 }
 .menu-toggle {
     position: absolute;
@@ -1207,26 +1209,19 @@ textarea {
     font-weight: 700;
 }
 
-.header-list-mobile .link:hover,
-.header-list-mobile .link:focus {
-    color: var(--focus-color);
-}
-
-.mobile-menu-list {
+.mobile-menu-list{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-bottom: 142px;
-    padding-top: 32px;
+    margin-bottom: 284px;
+    margin-top: 32px;
 }
-
-.mobile-menu-adress {
+.mobile-menu-adress{
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
-    padding-top: 142px;
-    padding-bottom: 48px;
-}
+    margin-bottom: 48px;
+    }
 
 .header-adress-mobile {
     font-size: 20px;
@@ -1246,6 +1241,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 112px 0;
 }
 .herotext {
     max-width: 320px;
@@ -1342,9 +1338,8 @@ textarea {
     max-width: 165px;
 }
 }
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
 .container {
-    min-width: 320px;
     max-width: 768px;
     overflow: hidden;
 }
@@ -1366,6 +1361,7 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 112px 0;
     }
 .herotext {
     max-width: 496px;
@@ -1430,7 +1426,6 @@ textarea {
 }
 @media only screen and (min-width: 1158px) {
 .container {
-        min-width: 320px;
         max-width: 1158px;
         overflow: hidden;
     }
