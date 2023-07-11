@@ -1397,7 +1397,7 @@ letter-spacing: 0.32px;
 .backdrop {
     max-width: 100%;
 }
-.header-menu-hamburger {
+.mobile-hamburger {
     display: none;
 }
 .mobile-menu {
@@ -1500,7 +1500,7 @@ letter-spacing: 0.32px;
         max-width: 1158px;
         overflow: hidden;
     }
-.header-menu-hamburger {
+.mobile-hamburger {
         display: none;
     }
 .mobile-menu {
