@@ -94,7 +94,6 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px 0 15px;
-    outline: 1px solid red;
 }
 /*Header*/
 .logo {
@@ -1125,6 +1124,31 @@ letter-spacing: 0.32px;
 .footer-btn {
     max-width: 165px;
 }
+.portfolio-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 263px;
+    gap: 24px 16px;
+    justify-content: flex-start;
+}
+.btn-first {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.porfolio-images {
+    display: flex;
+    justify-content: center;
+}
+.title-name {
+    color:#2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
 }
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 .container {
@@ -1387,6 +1411,31 @@ letter-spacing: 0.32px;
 .footer-btn {
     max-width: 165px;
 }
+.portfolio-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 263px;
+    gap: 24px 16px;
+    justify-content: flex-start;
+}
+.btn-first {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.porfolio-images {
+    display: flex;
+    justify-content: center;
+}
+.title-name {
+    color:#2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
 }
 @media only screen and (min-width: 767px) and (max-width: 1158px) {
 .container {
@@ -1506,6 +1555,16 @@ padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+.porfolio-images {
+    display: flex;
+    justify-content: flex-start;
+}
+.title-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
 }
 }
 @media only screen and (min-width: 1157px) {
