@@ -205,7 +205,7 @@ textarea {
 
 /*header-container Finish*/
 /*HERO-MAIN PAGE*/
-.hero {
+.hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/peopleofficex1.jpg);
     background-repeat: no-repeat;
@@ -214,6 +214,11 @@ textarea {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .herotext {
@@ -250,15 +255,6 @@ textarea {
     background-color: var(--focus-color);
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px;
-}
-
 /*HERO MAIN PAGE FINISH*/
 /*MP Section Features*/
 .features-section {
@@ -271,7 +267,7 @@ textarea {
     justify-content: space-between;
     align-items: stretch;
     gap: 24px;
-}
+    }
 
 .project-images {
     display: flex;
@@ -916,7 +912,7 @@ textarea {
 /*Adaptive*/
 @media only screen and (max-width: 428px) {
 .container {
-    max-width:427px;
+    max-width:428px;
     overflow: hidden;
     }
 .backdrop {
@@ -1009,13 +1005,14 @@ textarea {
  gap:56px;
 }
 /* FINISH */
-.hero {
+.hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/mobile/Dark-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 112px 0;
+    max-width:428px;
     }
 .herotext {
     max-width: 320px;
@@ -1026,19 +1023,28 @@ textarea {
     display: none;
 }
 .features-section {
-    padding: 96px 16px;
+    padding: 96px 0px 100px;
 }
 .features-container {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    
+}
+.text {
+color:  #434455;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.15;
+letter-spacing: 0.32px;
 }
 .adaptive-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.section-team {
+    padding: 96px 0 28px;
 }
 .title-name {
     font-size: 36px;
@@ -1059,6 +1065,9 @@ textarea {
     margin: auto 82px;
     width: 264px;
 }
+.customers {
+    padding: 100px 0 96px;
+}
 .list-customers {
     display: flex;
     flex-direction: row;
@@ -1066,7 +1075,11 @@ textarea {
     justify-content: center;
     column-gap: 16px;
     row-gap: 72px;
+    justify-content: center;
 
+}
+.customer-items {
+    width: 190px;
 }
 .container-footer {
     display:flex ;
@@ -1074,9 +1087,17 @@ textarea {
     align-items: center;
     gap:72px;
 }
+.footer {
+    padding: 96px 0;
+}
+.logo {
+    margin: 0;
+}
 .footer-link {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 18px;
 }
 .link-page {
     margin: 0;
@@ -1089,13 +1110,17 @@ textarea {
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .footer-form {
     flex-direction: column;
     align-items: center;
 }
+.footer-label {
+    width: 100%; 
+}
 .footer-input {
-    max-width: 398px;
+    width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .footer-btn {
@@ -1235,13 +1260,14 @@ textarea {
 }
 
 /* FINISH */
-.hero {
+.hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 112px 0;
+    max-width:428px;
 }
 .herotext {
     max-width: 320px;
@@ -1253,7 +1279,7 @@ textarea {
 }
 
 .features-section {
-    padding: 96px 16px;
+    padding: 96px 0px;
 }
 
 .features-container {
@@ -1262,13 +1288,22 @@ textarea {
     gap: 72px;
 
 }
+.text {
+    color:  #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.32px;
+    }
 
 .adaptive-list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.section-team {
+    padding: 96px 0 28px;
+}
 .title-name {
     font-size: 36px;
     font-weight: 700;
@@ -1288,14 +1323,20 @@ textarea {
     margin: auto 82px;
     width: 264px;
 }
-
+.customers {
+    padding: 96px 0;
+}
 .list-customers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 72px;
+    justify-content: center;
 
+}
+.customer-items {
+    width: 190px;
 }
 .container-footer {
     display: flex;
@@ -1303,10 +1344,17 @@ textarea {
     align-items: center;
     gap: 72px;
 }
-
+.footer {
+    padding: 96px 0;
+}
+.logo {
+    margin: 0;
+}
 .footer-link {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 18px;
 }
 
 .link-page {
@@ -1322,15 +1370,18 @@ textarea {
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .footer-form {
     flex-direction: column;
     align-items: center;
 }
-
+.footer-label {
+    width: 100%;
+}
 .footer-input {
-    max-width: 398px;
+    width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -1355,14 +1406,15 @@ textarea {
 .adress-list {
     display: block;
 }
-.hero {
+.hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/tablet/bgx1.jpg);
+        url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 112px 0;
-    }
+    max-width: 768px;
+}
 .herotext {
     max-width: 496px;
     font-size: 56px;
@@ -1379,7 +1431,9 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-
+}
+.section-team {
+    padding: 96px 0 ;
 }
 .title-name {
     font-size: 36px;
@@ -1389,9 +1443,12 @@ textarea {
     width: 356px;
 }
 .text {
+    color:  #434455;
     font-size: 16px;
     font-weight: 500;
-}
+    line-height: 1.15;
+    letter-spacing: 0.32px;
+    }
 .projects {
     display: none;
 }
@@ -1402,6 +1459,9 @@ textarea {
     justify-content: space-around;
     row-gap: 64px;
     flex-basis: calc((100% - 24px) / 2);
+    }
+.customers {
+        padding: 96px 0;
     }
 .list-customers {
     display: flex;
@@ -1417,7 +1477,18 @@ textarea {
     flex-wrap: wrap;
     row-gap: 72px;
 }
-
+.footer {
+    padding: 96px 0;
+}
+.logo {
+    margin: 0;
+}
+.footer-link {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 18px;
+}
 .follow {
     margin: 0;
     display: flex;
@@ -1435,9 +1506,17 @@ textarea {
 .mobile-menu {
     display: none;
 }
+.hero-container {
+    background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+}
 }
 @media (min-resolution: 192dpi) {
-    .hero {
+.hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/peopleofficex2.jpg);
     background-repeat: no-repeat;
