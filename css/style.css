@@ -89,12 +89,12 @@ textarea {
 /*Reset Finish*/
 /*Container*/
 .container {
-    width: 1158px;
+    /*width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px;*/
+    outline: 1px solid red;
 }
-
 /*Header*/
 .logo {
     font-family: "Raleway", sans-serif;
@@ -915,9 +915,9 @@ textarea {
 /*Adaptive*/
 @media only screen and (max-width: 427px) {
 .container {
-    max-width:100%;
+    min-width: 320px;
     overflow: hidden;
-}
+    }
 .backdrop {
     max-width: 100%;
     position: center;
@@ -981,7 +981,7 @@ textarea {
 .header-list-mobile {
     font-size: 36px;
     font-weight: 700;
-    }
+}
 .header-list-mobile .link:hover,
 .header-list-mobile .link:focus {
     color: var(--focus-color);
@@ -1009,7 +1009,7 @@ textarea {
  flex-direction: row;
  gap:56px;
 }
-/* FINISH*/
+/* FINISH */
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/mobile/Dark-bg.jpg);
@@ -1055,7 +1055,6 @@ textarea {
     align-items: center;
     flex-basis: calc((100% - 16px) / 2);
 }
-
 .staff {
     margin: auto 82px;
     width: 264px;
@@ -1105,7 +1104,8 @@ textarea {
 }
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 .container {
-    max-width: 100%;
+    min-width: 320px;
+    max-width: 428px;
     overflow: hidden;
 }
 .backdrop {
@@ -1239,10 +1239,10 @@ textarea {
     gap: 56px;
 }
 
-/* FINISH*/
+/* FINISH */
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/mobile/Dark-bg.jpg);
+        url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1344,7 +1344,8 @@ textarea {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
 .container {
-    max-width: 100%;
+    min-width: 320px;
+    max-width: 768px;
     overflow: hidden;
 }
 .backdrop {
@@ -1428,10 +1429,24 @@ textarea {
 }
 }
 @media only screen and (min-width: 1158px) {
+.container {
+        min-width: 320px;
+        max-width: 1158px;
+        overflow: hidden;
+    }
 .header-menu-hamburger {
         display: none;
     }
 .mobile-menu {
     display: none;
 }
+}
+@media (min-resolution: 192dpi) {
+    .hero {
+    background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/peopleofficex2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    }
 }
