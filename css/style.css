@@ -1484,7 +1484,11 @@ padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 72px;
+    gap: 72px 24px;
+    max-width: 545px;
+}
+.link-page{
+    margin-left: 0;
 }
 .footer {
     padding: 96px 0;
