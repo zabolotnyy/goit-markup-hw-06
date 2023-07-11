@@ -1402,6 +1402,7 @@ letter-spacing: 0.32px;
 .header-adress-list{
 font-size: 12px;
 font-weight: 400;
+padding: 0;
 }
 .mobile-hamburger {
     display: none;
@@ -1410,7 +1411,10 @@ font-weight: 400;
     display: none;
 }
 .adress-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding:16px 0;
 }
 .hero-container {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -1462,9 +1466,8 @@ font-weight: 400;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 64px;
-    flex-basis: calc((100% - 24px) / 2);
+    justify-content: center;
+    gap: 64px 24px;
     }
 .customers {
         padding: 96px 0;
