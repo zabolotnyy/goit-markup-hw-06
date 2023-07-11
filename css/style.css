@@ -186,8 +186,6 @@ textarea {
 .adress-list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .menu-toggle {
     min-height: 24px;
@@ -919,6 +917,7 @@ textarea {
     max-width: 100%;
     position: center;
 }
+
 .nav-list {
     display: none;
     }
@@ -1127,7 +1126,7 @@ letter-spacing: 0.32px;
     max-width: 165px;
 }
 }
-@media only screen and (min-width: 428px) and (max-width: 768px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
 .container {
     max-width: 428px;
     overflow: hidden;
@@ -1389,13 +1388,20 @@ letter-spacing: 0.32px;
     max-width: 165px;
 }
 }
-@media only screen and (min-width: 768px) and (max-width: 1158px) {
+@media only screen and (min-width: 767px) and (max-width: 1158px) {
 .container {
     max-width: 768px;
     overflow: hidden;
 }
 .backdrop {
     max-width: 100%;
+}
+.nav-list {
+    margin-left: 76px;
+}
+.header-adress-list{
+font-size: 12px;
+font-weight: 400;
 }
 .mobile-hamburger {
     display: none;
@@ -1495,7 +1501,7 @@ letter-spacing: 0.32px;
     flex-direction: column;
 }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
 .container {
         max-width: 1158px;
         overflow: hidden;
