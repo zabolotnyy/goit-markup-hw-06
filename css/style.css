@@ -90,7 +90,6 @@ textarea {
 /*Container*/
 .container {
     min-width: 320px;
-    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px 0 15px;
@@ -202,12 +201,14 @@ textarea {
 
 /*header-container Finish*/
 /*HERO-MAIN PAGE*/
-.hero-container {
+.hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/peopleofficex1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.hero-container {
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
@@ -1003,12 +1004,15 @@ textarea {
  gap:56px;
 }
 /* FINISH */
+.hero {
+background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+    url(../images/peopleofficex1.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+max-width:428px;
+}
 .hero-container {
-    background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/peopleofficex1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     padding: 112px 0;
     max-width:428px;
     }
@@ -1076,7 +1080,7 @@ letter-spacing: 0.32px;
     justify-content: center;
 
 }
-.customer-items {
+.customers-item {
     width: 190px;
 }
 .container-footer {
@@ -1152,7 +1156,8 @@ letter-spacing: 0.32px;
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
- .hero-container {
+    
+ .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/peopleofficex2.jpg);
     background-repeat: no-repeat;
@@ -1294,12 +1299,15 @@ letter-spacing: 0.32px;
 }
 
 /* FINISH */
-.hero-container {
+.hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
         url(../images/peopleoffice@x1.jpg 1x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width:428px;
+}
+.hero-container {
     padding: 112px 0;
     max-width:428px;
 }
@@ -1369,7 +1377,7 @@ letter-spacing: 0.32px;
     justify-content: center;
 
 }
-.customer-items {
+.customers-item {
     width: 190px;
 }
 .container-footer {
@@ -1448,7 +1456,7 @@ letter-spacing: 0.32px;
     letter-spacing: 0.4px;
 }
 @media screen and (min-device-pixel-ratio: 2),and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
- .hero-container {
+ .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/peopleofficex2.jpg);
     background-repeat: no-repeat;
@@ -1485,12 +1493,15 @@ padding: 0;
     gap: 12px;
     padding:16px 0;
 }
-.hero-container {
+.hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
+        url(../images/peopleofficex1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 768px;
+}
+.hero-container {
     padding: 112px 0;
     max-width: 768px;
 }
@@ -1589,7 +1600,7 @@ padding: 0;
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
- .hero-container {
+ .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/peopleofficex2.jpg);
     background-repeat: no-repeat;
@@ -1609,18 +1620,21 @@ padding: 0;
 .mobile-menu {
     display: none;
 }
-.hero-container {
+.hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleofficex1.jpg 1x, ../images/peopleofficex2.jpg 2x );
+        url(../images/peopleofficex1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
 }
+.hero-container {
+    max-width: 1440px;
+}
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
- .hero-container {
+ .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/peopleofficex2.jpg);
     background-repeat: no-repeat;
