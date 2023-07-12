@@ -1627,7 +1627,7 @@ padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    max-width: 545px;
+    padding: 0 108px;
 }
 .link-page{
     margin-left: 0;
