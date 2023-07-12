@@ -1101,7 +1101,6 @@ letter-spacing: 0.32px;
 }
 .customers {
     padding: 100px 0 96px;
-    width: 100%;
 }
 .list-customers {
     display: flex;
@@ -1413,7 +1412,6 @@ letter-spacing: 0.32px;
 }
 .customers {
     padding: 96px 0;
-    width: 100%;
 }
 .list-customers {
     display: flex;
@@ -1435,8 +1433,7 @@ letter-spacing: 0.32px;
 }
 .footer {
     padding: 96px 0;
-    width: 100%;
-}
+ }
 .logo {
     margin: 0;
 }
