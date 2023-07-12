@@ -93,6 +93,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px 0 15px;
+    outline: 1px solid red;
 }
 /*Header*/
 .logo {
@@ -203,10 +204,11 @@ textarea {
 /*HERO-MAIN PAGE*/
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleofficex1.jpg);
+        url(../images/desck@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 .hero-container {
     padding: 188px 0;
@@ -287,6 +289,14 @@ textarea {
     color: var(--background-color);
     margin-bottom: 8px;
 }
+.title-name-portfolio {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--background-color);
+    margin-bottom: 8px;
+}
 
 .text {
     font-size: 16px;
@@ -294,7 +304,12 @@ textarea {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
-
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
 .main-title {
     color: var(--background-color);
     font-size: 36px;
@@ -908,9 +923,9 @@ textarea {
     margin: 0 auto;
 }
 /*Adaptive*/
-@media only screen and (max-width: 427.98px) {
+@media only screen and (max-width: 428px) {
 .container {
-    max-width:428px;
+    width:428px;
     overflow: hidden;
     }
 .backdrop {
@@ -1006,15 +1021,15 @@ textarea {
 /* FINISH */
 .hero {
 background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-    url(../images/peopleofficex1.jpg);
+    url(../images/mob@1x.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-max-width:428px;
+max-width: 428px;
 }
-.hero-container {
-    padding: 112px 0;
-    max-width:428px;
+.hero-container{
+padding: 112px 0;
+width:428px;
     }
 .herotext {
     max-width: 320px;
@@ -1033,10 +1048,17 @@ max-width:428px;
     gap: 72px;
 }
 .text {
-color:  #434455;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.15;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.text-portfolio {
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
 letter-spacing: 0.32px;
 }
 .adaptive-list {
@@ -1050,7 +1072,18 @@ letter-spacing: 0.32px;
 }
 .title-name {
     font-size: 36px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.title-name-portfolio{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
 }
 .projects {
     display: none;
@@ -1146,29 +1179,24 @@ letter-spacing: 0.32px;
     display: flex;
     justify-content: center;
 }
-.title-name {
-    color:#2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-}
+
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
     
  .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/peopleofficex2.jpg);
+    url(../images/mob@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    max-width: 428px;
     }
 }
 }
 @media only screen and (min-width: 428px) and (max-width: 767.98px) {
 .container {
-    max-width: 428px;
+    width: 428px;
     overflow: hidden;
 }
 .backdrop {
@@ -1301,16 +1329,16 @@ letter-spacing: 0.32px;
 /* FINISH */
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleoffice@x1.jpg 1x);
+    url(../images/mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width:428px;
-}
-.hero-container {
+    max-width: 428px;
+    }
+.hero-container{
     padding: 112px 0;
-    max-width:428px;
-}
+    width:428px;
+    }
 .herotext {
     max-width: 320px;
     font-size: 36px;
@@ -1331,10 +1359,17 @@ letter-spacing: 0.32px;
 
 }
 .text {
-    color:  #434455;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    }
+.text-portfolio {
+        font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
     letter-spacing: 0.32px;
     }
 
@@ -1348,7 +1383,18 @@ letter-spacing: 0.32px;
 }
 .title-name {
     font-size: 36px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.title-name-portfolio{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
 }
 
 .projects {
@@ -1448,26 +1494,24 @@ letter-spacing: 0.32px;
     display: flex;
     justify-content: center;
 }
-.title-name {
-    color:#2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-}
-@media screen and (min-device-pixel-ratio: 2),and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+
+@media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+    
  .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/peopleofficex2.jpg);
+    url(../images/mob@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    max-width: 428px;
     }
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
 .container {
-    max-width: 768px;
+    width: 768px;
     overflow: hidden;
 }
 .backdrop {
@@ -1490,20 +1534,21 @@ padding: 0;
 .adress-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
     padding:16px 0;
 }
 .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleofficex1.jpg);
+        url(../images/tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 768px;
-}
+
+        }
 .hero-container {
     padding: 112px 0;
-    max-width: 768px;
+    width: 768px;
 }
 .herotext {
     max-width: 496px;
@@ -1525,19 +1570,37 @@ padding: 0;
 .section-team {
     padding: 96px 0 ;
 }
-.title-name {
-    font-size: 36px;
-    font-weight: 700;
-}
 .adaptive-list {
     width: 356px;
 }
-.text {
-    color:  #434455;
-    font-size: 16px;
+.title-name {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.title-name-portfolio{
+    font-size: 20px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
     letter-spacing: 0.32px;
+    }
+.text-portfolio {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px
     }
 .projects {
     display: none;
@@ -1591,27 +1654,23 @@ padding: 0;
     display: flex;
     justify-content: flex-start;
 }
-.title-name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-}
+
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
  .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/peopleofficex2.jpg);
+    url(../images/tablet@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    max-width: 768px;
     }
 }
 }
 @media only screen and (min-width: 1158px) {
 .container {
-        max-width: 1158px;
+        width: 1158px;
         overflow: hidden;
     }
 .mobile-hamburger {
@@ -1621,25 +1680,21 @@ padding: 0;
     display: none;
 }
 .hero {
-    background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-        url(../images/peopleofficex1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1440px;
+    max-width: 1158px;
 }
 .hero-container {
-    max-width: 1440px;
+    width: 1158px;
 }
 @media screen and (min-device-pixel-ratio: 2),
    screen and (min-resolution: 192dpi),
    screen and (min-resolution: 2dppx) {
  .hero {
     background: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
-                url(../images/peopleofficex2.jpg);
+                url(../images/desck@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
+    max-width: 1158px;
     }
 }
 }
